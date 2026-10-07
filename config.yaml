@@ -1,0 +1,171 @@
+# ============================================================
+#  UNDSS Sentiment Monitor — configuration
+#  This is the only file you normally need to edit.
+# ============================================================
+
+# ---- What to search for --------------------------------------------------
+# Each language gets its own search terms. Phrases with spaces are searched
+# as exact phrases.
+search_terms:
+  en:
+    - "UNDSS"
+    - "UN Department of Safety and Security"
+    - "United Nations Department of Safety and Security"
+    - "UN security management system"
+  fr:
+    - "UNDSS"
+    - "Département de la sûreté et de la sécurité"
+  es:
+    - "UNDSS"
+    - "Departamento de Seguridad de las Naciones Unidas"
+  ar:
+    - "UNDSS"
+    - "إدارة شؤون السلامة والأمن"
+
+# ---- Sources (switch any of them off with false) -------------------------
+sources:
+  gdelt: true          # Global news, 100+ languages, free, no account
+  google_news: true    # Google News RSS, one feed per language, free
+  reddit: true         # Public discussion (may be rate-limited without keys)
+  bluesky: true        # Public posts (needs a free Bluesky app password)
+
+# Google News editions to query for each language (language -> region code)
+google_news_editions:
+  en: [US, GB]
+  fr: [FR]
+  es: [ES]
+  ar: [EG]
+
+# How far back each regular run looks (hours). Duplicates are removed
+# automatically, so overlap with the previous run is fine.
+lookback_hours: 48
+
+# ---- Sentiment -----------------------------------------------------------
+# GDELT articles use GDELT's own full-article tone score.
+# Everything else is scored by a free multilingual AI model
+# (falls back to a simple keyword method if the model isn't installed).
+sentiment:
+  model: "cardiffnlp/twitter-xlm-roberta-base-sentiment"
+  gdelt_negative_below: -1.5   # GDELT tone below this = negative
+  gdelt_positive_above: 1.5    # GDELT tone above this = positive
+
+# ---- Topics --------------------------------------------------------------
+# A mention gets every topic whose keywords appear in its text
+# (case-insensitive, any language). "Institution" is the fallback topic.
+topics:
+  Security incidents:
+    - attack
+    - attacked
+    - killed
+    - kidnapped
+    - abducted
+    - ambush
+    - convoy
+    - explosion
+    - shelling
+    - airstrike
+    - gunmen
+    - looted
+    - attaque
+    - tué
+    - enlevé
+    - embuscade
+    - ataque
+    - asesinado
+    - secuestrado
+    - هجوم
+    - قتل
+    - اختطاف
+  Travel advisories & restrictions:
+    - security level
+    - security phase
+    - travel advisory
+    - travel restriction
+    - relocation
+    - relocated
+    - evacuation
+    - evacuated
+    - lockdown
+    - curfew
+    - niveau de sécurité
+    - évacuation
+    - évacué
+    - restriction de voyage
+    - evacuación
+    - evacuado
+    - nivel de seguridad
+    - إجلاء
+    - حظر تجول
+  Staff safety:
+    - UN staff
+    - UN personnel
+    - aid worker
+    - aid workers
+    - humanitarian worker
+    - peacekeeper
+    - staff safety
+    - duty of care
+    - personnel de l'ONU
+    - travailleurs humanitaires
+    - personal de la ONU
+    - trabajadores humanitarios
+    - موظفي الأمم المتحدة
+    - عمال الإغاثة
+  Institution & leadership:
+    - Under-Secretary-General
+    - USG
+    - budget
+    - reform
+    - appointed
+    - report
+    - review
+    - BSAFE
+    - SSAFE
+    - training
+    - Secretary-General
+    - Secrétaire général
+    - Secretario General
+
+# Words that suggest the mention is CRITICAL of UN security / UNDSS itself
+# (as opposed to simply reporting bad news). Used for the "Criticism" flag.
+criticism_keywords:
+  - criticized
+  - criticised
+  - criticism
+  - failure
+  - failed to
+  - negligence
+  - negligent
+  - accused
+  - blamed
+  - inadequate
+  - lack of security
+  - poor security
+  - risk aversion
+  - risk-averse
+  - bunkerization
+  - bunkerisation
+  - overly cautious
+  - critiqué
+  - critique
+  - échec
+  - négligence
+  - criticado
+  - crítica
+  - fracaso
+  - negligencia
+  - انتقاد
+  - فشل
+  - إهمال
+
+# ---- Alerts --------------------------------------------------------------
+alerts:
+  # A spike = negative mentions in the last 24h are at least
+  # `spike_multiplier` times the daily average of the previous 7 days,
+  # AND at least `spike_min_count`.
+  spike_multiplier: 2.0
+  spike_min_count: 3
+  # Also alert immediately on any new mention flagged as criticism
+  alert_on_new_criticism: true
+  # Don't send the same type of alert again within this many hours
+  cooldown_hours: 12

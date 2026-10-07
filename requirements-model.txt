@@ -1,0 +1,6 @@
+# Optional: free multilingual AI sentiment model (installed automatically by the GitHub workflow).
+# To use it on your own computer, install torch CPU-only first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+transformers>=4.40
+sentencepiece
+protobuf
