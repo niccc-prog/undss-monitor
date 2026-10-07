@@ -1,0 +1,41 @@
+[
+  {
+    "time": "2026-10-07T19:00:00+00:00",
+    "kind": "spike",
+    "subject": "⚠️ UNDSS monitor: negative coverage spike (10 in 24h) — DEMO",
+    "intro": "10 negative mentions in the last 24 hours — well above the recent daily average.",
+    "items": [
+      {
+        "title": "Explosion near UN compound in Sudan, staff relocated",
+        "url": "https://example.org/demo/demo00011",
+        "outlet": "globalwire.example",
+        "source": "GDELT news"
+      },
+      {
+        "title": "Aid workers killed in Colombia as UN raises security level",
+        "url": "https://example.org/demo/demo00001",
+        "outlet": "Sample Gazette",
+        "source": "Google News"
+      },
+      {
+        "title": "UN convoy attacked near Somalia; UNDSS reviewing security procedures",
+        "url": "https://example.org/demo/demo00008",
+        "outlet": "r/humanitarian",
+        "source": "Reddit"
+      },
+      {
+        "title": "Le personnel de l'ONU évacué après une embuscade au Liban",
+        "url": "https://example.org/demo/demo00002",
+        "outlet": "globalwire.example",
+        "source": "GDELT news"
+      },
+      {
+        "title": "Explosion near UN compound in Sudan, staff relocated",
+        "url": "https://example.org/demo/demo00006",
+        "outlet": "@reporter.example",
+        "source": "Bluesky"
+      }
+    ],
+    "delivered_via": []
+  }
+]

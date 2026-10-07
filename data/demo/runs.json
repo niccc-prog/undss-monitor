@@ -1,0 +1,18 @@
+[
+  {
+    "time": "2026-10-07T20:00:00+00:00",
+    "sources": {
+      "gdelt": "demo",
+      "google_news": "demo",
+      "reddit": "demo",
+      "bluesky": "demo"
+    },
+    "collected": 386,
+    "new": 0,
+    "total": 386,
+    "sentiment_engine": "demo",
+    "alerts": [
+      "spike"
+    ]
+  }
+]
