@@ -1,5 +1,20 @@
 [
   {
+    "time": "2026-10-12T15:39:20.104770+00:00",
+    "window_start": "2026-10-10T15:39:20.104770+00:00",
+    "sources": {
+      "gdelt": "ok (0)",
+      "google_news": "ok (1)",
+      "reddit": "error: all 7 requests failed (HTTPError)",
+      "bluesky": "error: needs login — add BSKY_HANDLE and BSKY_APP_PASSWORD secrets"
+    },
+    "collected": 1,
+    "new": 0,
+    "total": 5,
+    "sentiment_engine": "model",
+    "alerts": []
+  },
+  {
     "time": "2026-10-12T13:00:21.745831+00:00",
     "window_start": "2026-10-10T13:00:21.745831+00:00",
     "sources": {
