@@ -1,5 +1,20 @@
 [
   {
+    "time": "2026-10-24T12:56:56.437786+00:00",
+    "window_start": "2026-10-22T12:56:56.437786+00:00",
+    "sources": {
+      "gdelt": "error: all 1 requests failed (ConnectTimeout)",
+      "google_news": "ok (1)",
+      "reddit": "error: all 7 requests failed (HTTPError)",
+      "bluesky": "error: needs login — add BSKY_HANDLE and BSKY_APP_PASSWORD secrets"
+    },
+    "collected": 1,
+    "new": 0,
+    "total": 11,
+    "sentiment_engine": "model",
+    "alerts": []
+  },
+  {
     "time": "2026-10-24T09:47:34.062940+00:00",
     "window_start": "2026-10-22T09:47:34.062940+00:00",
     "sources": {
