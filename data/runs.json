@@ -1,5 +1,20 @@
 [
   {
+    "time": "2026-10-26T14:58:17.115437+00:00",
+    "window_start": "2026-10-24T14:58:17.115437+00:00",
+    "sources": {
+      "gdelt": "error: all 1 requests failed (ReadTimeout)",
+      "google_news": "ok (0)",
+      "reddit": "error: all 7 requests failed (HTTPError)",
+      "bluesky": "error: needs login — add BSKY_HANDLE and BSKY_APP_PASSWORD secrets"
+    },
+    "collected": 0,
+    "new": 0,
+    "total": 11,
+    "sentiment_engine": "",
+    "alerts": []
+  },
+  {
     "time": "2026-10-26T10:00:41.348343+00:00",
     "window_start": "2026-10-24T10:00:41.348343+00:00",
     "sources": {
