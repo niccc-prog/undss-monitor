@@ -1,5 +1,20 @@
 [
   {
+    "time": "2026-11-08T19:45:11.074321+00:00",
+    "window_start": "2026-11-06T19:45:11.074321+00:00",
+    "sources": {
+      "gdelt": "ok (0)",
+      "google_news": "ok (0)",
+      "reddit": "error: all 7 requests failed (HTTPError)",
+      "bluesky": "error: needs login — add BSKY_HANDLE and BSKY_APP_PASSWORD secrets"
+    },
+    "collected": 0,
+    "new": 0,
+    "total": 19,
+    "sentiment_engine": "",
+    "alerts": []
+  },
+  {
     "time": "2026-11-08T13:32:36.401772+00:00",
     "window_start": "2026-11-06T13:32:36.401772+00:00",
     "sources": {
@@ -2972,21 +2987,6 @@
   {
     "time": "2026-10-13T21:46:42.063948+00:00",
     "window_start": "2026-10-11T21:46:42.063948+00:00",
-    "sources": {
-      "gdelt": "ok (0)",
-      "google_news": "ok (2)",
-      "reddit": "error: all 7 requests failed (HTTPError)",
-      "bluesky": "error: needs login — add BSKY_HANDLE and BSKY_APP_PASSWORD secrets"
-    },
-    "collected": 2,
-    "new": 0,
-    "total": 7,
-    "sentiment_engine": "model",
-    "alerts": []
-  },
-  {
-    "time": "2026-10-13T18:44:46.924364+00:00",
-    "window_start": "2026-10-11T18:44:46.924364+00:00",
     "sources": {
       "gdelt": "ok (0)",
       "google_news": "ok (2)",
