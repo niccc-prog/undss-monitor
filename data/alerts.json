@@ -1,0 +1,29 @@
+[
+  {
+    "time": "2026-11-19T11:52:06.509752+00:00",
+    "kind": "spike",
+    "subject": "⚠️ UNDSS monitor: negative coverage spike (3 in 24h)",
+    "intro": "3 negative mentions in the last 24 hours — 6.0× the recent daily average of 0.14.",
+    "items": [
+      {
+        "title": "Israel pone fin a incursión militar en Gaza que desplazó a miles de palestinos",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBpakRpV1A3THZ0YTRKS2RpU1dtb24wWjAtZXhjS3ZNREVZbHpRd0JLYk1JM2dlOVNZVDdnX0FjbUZmcE1zRk5naVZpRTN3VUFrRTI2UXROT29IZTAtajlaSXhISThEQ3RXZ09pbXVYaEZ6UjA?oc=5",
+        "outlet": "De Último Minuto",
+        "source": "Google News"
+      },
+      {
+        "title": "Israeli army launches major assault against central Gaza",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTGVZWnp3eUJVMnZNTDVKcXlXQkQ4YmIxazFrQTVLZS1pZWZQRHhIZXBHUUl2UG1Mc3dpeUpvVXBic29kazBMT2Z6emY3bmc3NEVTZlJzZmZiZ3U0eFRYOXQyNkF0bHprdWNESnpEbG55T2QyQklPamtRZDR2N3haSnN5VDZ5Rk9SelA1M0NpWQ?oc=5",
+        "outlet": "thecradle.co",
+        "source": "Google News"
+      },
+      {
+        "title": "آليات الاحتلال تقترب من حي الدعوة بالنصيرات وسط إطلاق نار ونزوح المواطنين",
+        "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNYXc2UGdZb2ZZRW9TM0M5V0NLYzFZRkJhUnJOSFNseXhMLVVMX1ZxZjVzR0Z0OHFZMGhBUVVudFVnTUExODhBVy1kQlkyTVBDSnFNYzk2YW5PNFRBX0VhTUhuZWcxZXJCQlh0TGpneUhFLVhfQ1RCM3ZwX3MyaHlHcFR2UXZ5WFBuLWNJWmFZUldxanBOSGFpanVxR3JONzM0WHZPOGMyR1F5NHNLWXhGOVNzemNPY0ZZWnl3dVJVaDdBZmxUSmZyVFJkTEFuUFRrc1ctSzhvTlJiazVEbnZoaWQ0aW5fUnRKNU9PNktqXzVzWTJRaWVaLVdFaGJNTTZsakZZVllxTjZJcWFjMmVmQkxVc1QxaHlhdkE?oc=5",
+        "outlet": "فلسطين اليوم",
+        "source": "Google News"
+      }
+    ],
+    "delivered_via": []
+  }
+]
